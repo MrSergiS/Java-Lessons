@@ -1,23 +1,23 @@
 package com.example;
-import com.example.lesson_2.Animal;
-import com.example.lesson_2.Dog;
-import com.example.lesson_2.Cat;
+import com.example.lesson_2.*;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+		// Lesson 1. First app
 
-	// Lesson 2
-	Animal[] animals = new Animal[3];
-	animals[0] = new Animal("Animal");
-	animals[1] = new Dog("Bob");
-	animals[2] = new Cat("Kitty");
+		System.out.println("Hello world!");
+	
+		// Lesson 2 & 3. OPP & Maven dependency
+		Animal[] animals = {new Dog(), new Cat()};
+		animals[0].setName("Bob");
+		animals[1].setName("Garfild");
 
-	for (Animal animal : animals) {
-		System.out.println(animal.getName() + " says: ");
-	       	animal.makeSound();
-	}
+		for (Animal animal : animals) {
+			System.out.println("Privet " + animal.getName());
+		}
+	
+
     }
 }

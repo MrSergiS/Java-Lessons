@@ -1,10 +1,9 @@
 package com.example.lesson_2;
 
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class Dog extends Animal {
-	public Dog(String name) {
-		super(name);
-	}
 
 	@Override
 	public void makeSound() {
